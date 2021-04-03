@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Product example · Bootstrap v5.0</title>
+
+   
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (max-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        #oneplus{
+          width: 400px;
+          height: 400px;
+        }
+        #laps1{
+    position: relative;
+       transition: all;
+       animation-name: lap1;
+       animation-duration: 4s;
+       animation-fill-mode: forwards;
+        }
+        @keyframes lap1{
+          from{
+           left:-100px;
+          }
+          to{
+            left:10px;
+          }
+        }
+        #hpgamma{
+          width: 400px;
+          height: 400px;
+        }
+        #lenovo11{
+          width: 400px;
+          height: 400px;
+        }
+      }
+      @media (min-width: 900px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        #laptop1{
+      display: none;
+        }
+      }
+      #laptop{
+        transition: all;
+        animation-name: lap;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+
+      }
+      .hp:hover{
+        border: 5px solid blue;
+      }
+      #shadows{ 
+        position: relative;
+        transition: all;
+        animation-name: shadowcons;
+        animation-duration: 4s;
+        animation-iteration-count: 4;
+      }
+      @keyframes shadowcons{
+        from{
+          right: -100px;
+        }
+        to{
+          right: 0px;
+        }
+      }
+      @keyframes lap{
+        from{
+          right: -100px;
+        }
+        to{
+          right: -20px;
+        }
+      }
+      #box1{
+        transition: all;
+        position: relative;
+        animation-name: left;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes left{
+        from{
+          left:-100px;
+        }
+        to{
+          left:0px;
+        }
+      }
+      #box2{
+        transition: all;
+        position: relative;
+        animation-name: right;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes right{
+        from{
+          right:-100px;
+        }
+        to{
+          right:0px;
+        }
+      }
+     #flexers{
+        transition: all;
+        position: relative;
+        animation-name: nav;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes nav{
+        from{
+          top:-100px;
+        }
+        to{
+          top:0px;
+        }
+      }
+      #lenovo{
+        transition: all;
+        position: relative;
+        animation-name: lenovolap;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 3;
+      }
+      @keyframes lenovolap{
+        from{
+          left: -100px;
+        }
+        to{
+          left: 0px;
+        }
+      }
+      #oneplus{
+        position: relative;
+        transition: all;
+        animation-name: oneplusmob;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes oneplusmob{
+        0%{
+          transform: rotateX(30deg);
+        }
+        50%{
+          transform: rotateY(60deg);
+          transform: rotateYI(80deg);
+        }
+        
+        75%{
+          transform: rotateX(180deg);
+        }
+        100%{
+          transform: rotateX(30deg);
+        }
+      }
+      #cta:hover{
+        background-color: crimson;
+        color: white;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+        for(var i=0;i<5;i++)
+        {
+$("#sliding").slideUp(1000);
+$("#sliding").slideDown(1000);
+        }
+        for(var i=0;i<5;i++)
+        {
+$("#sliding2").slideUp(1000);
+$("#sliding2").slideDown(1000);
+        }
+      })
+    </script>
+  </head>
+  <body>
+    
+<header class="site-header sticky-top py-1">
+  <div id="flexers" style="display: flex;justify-content: space-evenly;">
+    <a class="py-2" href="#" aria-label="Product">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+    </a>
+   
+    <a style="text-decoration: none;color: white;" href="#">Product</a>
+    <a style="text-decoration: none;color: white;" href="#">Features</a>
+    <a style="text-decoration: none;color: white;" href="#">Support</a>
+    <a style="text-decoration: none;color: white;" href="#">Pricing</a>
+    <a style="text-decoration: none;color: white;" href="index1.html.html">Cart</a>
+  </div>
+</header>
+
+<main>
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div id="laps1" class="col-md-5 p-lg-5 mx-auto my-5">
+      <img id="laptop1" src="../carousel/laptop.png" width="150px" height="150px">
+
+      <h1 class="display-4 fw-normal">Digital Homecoming</h1>
+      <p class="lead fw-normal">Get laptops with high-end snapdragon processors and pixels. This generation is going to be the blessed era of digital world.</p>
+      <a class="btn btn-outline-secondary" href="#launches">Coming soon</a>
+    </div>
+    <div id="laptop" class="product-device shadow-sm d-none d-md-block"><img src="../carousel/laptop.png"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div  id="box1" class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Hewlett packard brands</h2>
+        <img src="hpgame.jpg" id="hpgamma"><br><br>
+        <div id="sliding">Click on the following images to select variants</div><br>
+        <div id="flexi" style="display: flex;justify-content: center;justify-content: space-around;">
+          <div>
+            <img class="hp" src="hpgame1.jpg" onclick="hp1()" width="30px" height="30px">
+          </div>
+          <div>
+            <img class="hp" src="hpgame2.jpg" onclick="hp2()" width="30px" height="30px">
+          </div>
+          <div>
+            <img class="hp" src="hpgame3.jpg" onclick="hp3()" width="30px" height="30px">
+          </div>
+          <div>
+            <img class="hp" src="hpgame4.jpg" onclick="hp4()" width="30px" height="30px">
+          </div>
+        </div>
+       
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%;justify-content: left    ; height: 300px;color: black; border-radius: 21px 21px 0 0;"><br><br>
+        When it comes to buying laptops, searching is mandatory.<br>
+        <u><h2>Specs of hp pavilion</h2></u><br>
+       <ul>
+        <li>3.0GHz AMD ryzen5-4600h 4th Gen processor</li>
+        <li>8GB DDR4 RAM</li>
+          <li>1TB 7200rpm hard drive + 256GB SSD</li>
+            <li>15.6-Inch screen, nvidia GeForce GTX 1650 4GB Graphics</li>
+              <li>Windows 10 Home operating system</li>
+                <li>8 hours battery life, 1.98kg laptop</li>
+       </ul>
+       </div>
+    
+    </div>
+    <div id="box2"  class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div  class="my-3 p-3">
+        <h2  class="display-5">Dell devices</h2>
+        <img src="dellgame.jpg" id="dellgamma" width="400px" height="300px"><br><br>
+        <div id="sliding2">Click the following images to select variants</div><br>
+        <div id="flexi" style="display: flex;justify-content: center;justify-content: space-around;">
+          <div>
+            <img class="dell" src="dellgame1.jpg" onclick="dell1()" width="30px" height="30px">
+          </div>
+          <div>
+            <img class="dell" src="dellgame.jpg" onclick="dell2()" width="30px" height="30px">
+          </div>
+          <div>
+            <img class="dell" src="dellgame2.jpg" onclick="dell3()" width="30px" height="30px">
+          </div>
+          <div>
+            <img class="dell" src="dellgame3.jpg" onclick="dell4()" width="30px" height="30px">
+          </div>
+        </div>
+       
+      </div><br><br><br><br>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;color: white;"><br>This breathtakingly powerful gaming laptop doesn't compromise, tackling all the latest AAA games without even breaking a sweat.<br><br>
+      <u><h2>Features</h2></u><br>
+        <ul>
+          <li>Processor :- Intel Core i3-8145U 8th Generation Processor (3MB Cache, 2.1 GHz) boost 3.9 Ghz</li>
+        <li>RAM :- 8 GB DDR4, 2400MHz; up to 32GB</li>
+        <li>HDD :- 1TB || Screen Size :- 14" || No DVD Drive</li>
+        <li>OS :- Ubantu (DOS)</li>
+        <li>Warranty :- 1 Year NBD + ADP || Without BAG</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" id="lenovo">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Lenovo ideapad</h2>
+        <img src="lenovogame.jpg" id="lenovo11">
+        <div id="flexi" style="display: flex;justify-content: space-evenly;">
+          <div>
+            <img onclick="leno()" src="lenovogame1.jpg"   width="30px" height="30px">
+          </div>
+          <div>
+            <img onclick="leno1()" src="lenovogame2.jpg" width="30px" height="30px">
+          </div>
+          <div>
+            <img onclick="leno2()" src="lenovogame3.jpg" width="30px" height="30px">
+          </div>
+            <!-- <img class="lenovo" src="dellgame2.jpg" onclick="dell3()" width="30px" height="30px">
+          </div>
+          <div>
+            <img class="lenovo" src="dellgame3.jpg" onclick="dell4()" width="30px" height="30px">
+          </div> -->
+          </div>
+      </div>
+      </div>
+      <div id="shadows"class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;color: white;"><br>
+        <u><h2>Specifications</h2></u><br>
+        <ul>
+        <li>Processor: 10th Gen Intel Core i3-1005G1 processor
+        <li>Operating System: Pre-loaded Windows 10
+        <li>Display: 15.6 inch screen with (1920X1080) full HD display
+        <li>Memory and storage: 8 GB RAM | Storage: 256 GB SSD
+        <li>Design and battery: thin and light laptop, 180 degree hingers 
+      </div>
+    </div>
+    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 id="launches" class="display-5">Upcoming launches</h2>
+        <img id="oneplus" src="oneplus.png">
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px;color: black; border-radius: 21px 21px 0 0;">
+      <em>"Never Settle"</em>This says it all.<br>
+      <em>One of the best contenders in the mobile market equalizing apple products. Has impeccable speed and best processors in the whole Indian market.</em><br><br>
+       <center><div id="cta" style="border:2px solid black;width: 140px;height: 70px;padding-top: 20px;border-radius: 30px;" onclick="location.href='index1.html'">Add to cart</div></center>
+    </div>
+    </div>
+  </div>
+
+  
+</main>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Web proprietor</h5>
+      <ul class="list-unstyled text-small">
+        <li><a style="text-decoration: none;" class="link-secondary" href="#">Srikrishna S</a></li>
+       
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Contact</h5>
+      <ul class="list-unstyled text-small">
+        <li><a style="text-decoration: none;" class="link-secondary" href="#">Email-krishna199987@gmail.com</a></li>
+        <li><a style="text-decoration: none;" class="link-secondary" href="#">Linkedin-<a href="https://www.linkedin.com/in/srikrishnas1999/">Srikrishna S</a></li>
+        <li><a style="text-decoration: none;" class="link-secondary" href="#">Mob : 8056701271</a></li>
+        <li><a style="text-decoration: none;" class="link-secondary" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Domains</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Business</a></li>
+        <li><a class="link-secondary" href="#">Education</a></li>
+        <li><a class="link-secondary" href="#">Government</a></li>
+        <li><a class="link-secondary" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Team</a></li>
+        <li><a class="link-secondary" href="#">Locations</a></li>
+        <li><a class="link-secondary" href="#">Privacy</a></li>
+        <li><a class="link-secondary" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+      function hp1()
+      {
+      var hpgame=document.getElementById("hpgamma");
+    hpgame.src="hpgame1.jpg";
+      }
+      function hp2()
+      {
+      var hpgame=document.getElementById("hpgamma");
+    hpgame.src="hpgame2.jpg";
+      }
+      function hp3()
+      {
+      var hpgame=document.getElementById("hpgamma");
+    hpgame.src="hpgame3.jpg";
+      }
+      function hp4()
+      {
+      var hpgame=document.getElementById("hpgamma");
+    hpgame.src="hpgame4.jpg";
+    hggame.style.width="100px";
+    hpgame.style.height="100px";
+      }
+      function dell1()
+      {
+      var dellgame=document.getElementById("dellgamma");
+    dellgame.src="dellgame1.jpg";
+
+      }
+      function dell2()
+      {
+      var dellgame=document.getElementById("dellgamma");
+    dellgame.src="dellgame.jpg";
+
+      }
+      function dell3()
+      {
+      var dellgame=document.getElementById("dellgamma");
+    dellgame.src="dellgame2.jpg";
+
+      }
+      function dell4()
+      {
+      var dellgame=document.getElementById("dellgamma");
+    dellgame.src="dellgame3.jpg";
+
+      }
+      function leno()
+      {
+      var lenogame=document.getElementById("lenovo11");
+    lenogame.src="lenovogame1.jpg";
+
+      }
+      function leno1()
+      {
+      var lenogame=document.getElementById("lenovo11");
+    lenogame.src="lenovogame2.jpg";
+
+      }
+      function leno2()
+      {
+      var lenogame=document.getElementById("lenovo11");
+    lenogame.src="lenovogame3.jpg";
+
+      }
+    </script>
+      
+  </body>
+</html>
